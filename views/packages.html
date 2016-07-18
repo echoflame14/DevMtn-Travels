@@ -12,7 +12,7 @@
 
         <!--You will need to make the ui-sref work. It should point to the booked state. If you look at your app.js the booked state
        is expecting an id to be passed along You can get that id from the data object that we are repeating over -->
-        <button ui-sref="booked({id: {{travelInfo[0].id}}})">Book Now</button>
+        <button>View options</button>
     </section>
 	 <section class="package-card">
         <!-- Once we have the data we can use {{}} to bind that data to our view -->
@@ -25,7 +25,7 @@
 
         <!--You will need to make the ui-sref work. It should point to the booked state. If you look at your app.js the booked state
        is expecting an id to be passed along You can get that id from the data object that we are repeating over -->
-        <button ui-sref="booked({id: {{travelInfo[1].id}}})">Book Now</button>
+        <button>View options</button>
     </section>
 	 <section class="package-card">
         <!-- Once we have the data we can use {{}} to bind that data to our view -->
@@ -38,9 +38,32 @@
 
         <!--You will need to make the ui-sref work. It should point to the booked state. If you look at your app.js the booked state
        is expecting an id to be passed along You can get that id from the data object that we are repeating over -->
-        <button ui-sref="booked({id: {{travelInfo[2].id}}})">Book Now</button>
+        <button id="slide">View options</button>
     </section>
+
 </section>
+<section>
+	  <ul>
+		  <li>1200</li>
+		  <li>1450</li>
+		  <li>1200</li>
+	   <li>1450</li>  <li>1200</li>
+		  <li>1450</li>  <li>1200</li>
+  		  <li>1450</li>  <li>1200</li>
+  		  <li>1450</li>  <li>1200</li>
+  		  <li>1450</li>  <li>1200</li>
+  		  <li>1450</li>  <li>1200</li>
+  		  <li>1450</li>  <li>1200</li>
+  		  <li>1450</li>
+	  </ul>
+</section>
+<script type="text/javascript">
+	$(document).ready(function(){
+	  $("#slide").click(function(){
+		  alert("sliding out");
+	  });
+	});
+</script>
 
         <!--You will need to make the ui-sref work. It should point to the booked state. If you look at your app.js the booked state
         is expecting an id to be passed along You can get that id from the data object that we are repeating over -->
