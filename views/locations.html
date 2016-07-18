@@ -5,19 +5,57 @@
         <div class="image-container">
             <!-- Once we have the data we can use {{}} to bind that data to our view -->
             <!--Add the image link from the data here. Remember to put something in the alt tag, perhaps the name of the city-->
-            <img src="" alt="">
+            <img src="{{travelInfo[0].image}}" alt="NewYork">
         </div>
         <div class="location-inner-left">
             <!-- Now we can start to extract the data and bind it to our different elements here-->
-            <h6> <!--The city name goes here--> </h6>
-            <h1><!--The country name goes here--></h1>
-            <p><!--The description goes here--></p>
+            <h6>{{travelInfo[0].city}}</h6>
+            <h1>{{travelInfo[0].country}}</h1>
+            <p>{{travelInfo[0].desc}}</p>
         </div>
         <div class="location-inner-right">
-            <h3>Package Start At $<!--The package price goes here--></h3>
+            <h3>Package Start At $ {{travelInfo[0].price}}</h3>
             <!--You will need to make the ui-sref work. It should point to the booked state. If you look at your app.js the booked state
             is expecting an id to be passed along You can get that id from the data object that we are repeating over -->
-            <button>Book Now</button>
+            <button ui-sref="booked({id:'{{travelInfo[0].id}}'})">Book Now</button>
+        </div>
+    </section>
+	 <section class="location-card" >
+        <div class="image-container">
+            <!-- Once we have the data we can use {{}} to bind that data to our view -->
+            <!--Add the image link from the data here. Remember to put something in the alt tag, perhaps the name of the city-->
+            <img src="{{travelInfo[1].image}}" alt="NewYork">
+        </div>
+        <div class="location-inner-left">
+            <!-- Now we can start to extract the data and bind it to our different elements here-->
+            <h6>{{travelInfo[1].city}}</h6>
+            <h1>{{travelInfo[1].country}}</h1>
+            <p>{{travelInfo[1].desc}}</p>
+        </div>
+        <div class="location-inner-right">
+            <h3>Package Start At $ {{travelInfo[1].price}}</h3>
+            <!--You will need to make the ui-sref work. It should point to the booked state. If you look at your app.js the booked state
+            is expecting an id to be passed along You can get that id from the data object that we are repeating over -->
+            <button ui-sref="booked({id:'{{travelInfo[1].id}}'})">Book Now</button>
+        </div>
+    </section>
+	 <section class="location-card" >
+        <div class="image-container">
+            <!-- Once we have the data we can use {{}} to bind that data to our view -->
+            <!--Add the image link from the data here. Remember to put something in the alt tag, perhaps the name of the city-->
+            <img src="{{travelInfo[2].image}}" alt="NewYork">
+        </div>
+        <div class="location-inner-left">
+            <!-- Now we can start to extract the data and bind it to our different elements here-->
+            <h6>{{travelInfo[2].city}}</h6>
+            <h1>{{travelInfo[2].country}}</h1>
+            <p>{{travelInfo[2].desc}}</p>
+        </div>
+        <div class="location-inner-right">
+            <h3>Package Start At $ {{travelInfo[2].price}}</h3>
+            <!--You will need to make the ui-sref work. It should point to the booked state. If you look at your app.js the booked state
+            is expecting an id to be passed along You can get that id from the data object that we are repeating over -->
+            <button ui-sref="booked({id:'{{travelInfo[2].id}}'})">Book Now</button>
         </div>
     </section>
 </section>

@@ -1,4 +1,4 @@
-angular.module('devmtnTravel').service('mainSrv', function(){
+angular.module('devmtnTravel').service("srvc", function(){
 
     this.travelInfo = [{
         city: 'New York',
@@ -24,5 +24,5 @@ angular.module('devmtnTravel').service('mainSrv', function(){
         price: 1112
 
 
-    }]
-})
+    }];
+});
